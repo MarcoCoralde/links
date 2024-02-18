@@ -1,110 +1,681 @@
-<!--
------------------
-https://github.com/ardacarofficial/links-website is open source project.
------------------
--->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marco Coralde</title>
-    <meta name="description" content="Your Description">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&amp;display=swap">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="./img/Logo MC.png" type="image/x-icon">
-  </head>
-  <body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/webp" />
+        <link rel="icon" href="favicon.ico" type="image/webp" />
 
-    <header>
-    <!-- Logo, Title and Description Codes Start -->
-      <div class="header_img flex_column_center">
-        <img src="img/My pic 3.png" alt="Logo" />
-      </div>
-      <div class="header_text flex_column_center">
-        <h1 class="header_h_item">Marco Coralde</h1>
-        <h2 class="header_h_item">Freelancer</h2>
-      </div>
-    <!-- Logo, Title and Description Codes End -->  
+        <title>Marco Coralde</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+        <link rel="shortcut icon" href="./img/Logo MC.png" type="image/x-icon">
+        <style>
+.root {
 
-    
+/**
+   * colors
+   */
 
-   
+  /* gradient */
 
-    </header>
-    <main>
-      <!-- Menu Container 1 Codes Start -->
-      <section id="main_section_container_1" class="flex_column_center">
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(240, 1%, 25%) 3%, 
+    hsl(0, 0%, 19%) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+    to bottom right, 
+    hsla(240, 1%, 18%, 0.251) 0%, 
+    hsla(240, 2%, 11%, 0) 100%
+  ), hsl(240, 2%, 13%);
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right, 
+    hsl(45, 100%, 71%) 0%, 
+    hsla(36, 100%, 69%, 0) 50%
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+    135deg, 
+    hsla(45, 100%, 71%, 0.251) 0%, 
+    hsla(35, 100%, 68%, 0) 59.86%
+  ), hsl(240, 2%, 13%);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(0, 0%, 25%) 0%, 
+    hsla(0, 0%, 25%, 0) 50%
+  );
+  --text-gradient-yellow: linear-gradient(
+    to right, 
+    hsl(45, 100%, 72%), 
+    hsl(35, 100%, 68%)
+  );
+
+  /* solid */
+
+  --jet: hsl(0, 0%, 22%);
+  --onyx: hsl(240, 1%, 17%);
+  --eerie-black-1: hsl(240, 2%, 13%);
+  --eerie-black-2: hsl(240, 2%, 12%);
+  --smoky-black: hsl(0, 0%, 7%);
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 98%);
+  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --vegas-gold: hsl(45, 54%, 58%);
+  --light-gray: hsl(0, 0%, 84%);
+  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+    /**
+   * shadow
+   */
+  
+   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+   --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+ 
+}
+
+
+            body,
+            html {
+                -ms-scroll-chaining: none;
+                overscroll-behavior: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background: hsl(240, 2%, 12%);; /* Change this value to your desired gradient */
+            }
+            @-webkit-keyframes slidetounlock {
+                0% {
+                    background-position: -100px 0;
+                }
+                10% {
+                    background-position: -100px 0;
+                }
+                50% {
+                    background-position: 100px 0;
+                }
+                to {
+                    background-position: 100px 0;
+                }
+            }
+            @keyframes slidetounlock {
+                0% {
+                    background-position: -100px 0;
+                }
+                10% {
+                    background-position: -100px 0;
+                }
+                50% {
+                    background-position: 100px 0;
+                }
+                to {
+                    background-position: 100px 0;
+                }
+            }
+            .min-h-full {
+                min-height: 100vh;
+            }
+            .flex {
+                display: flex;
+            }
+            .flex-both-center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .flex-wrap {
+                flex-wrap: wrap;
+            }
+            .flex-h-center {
+                display: flex;
+                justify-content: center;
+            }
+            .item-center {
+                align-items: center;
+            }
+            .flex-dir-c {
+                flex-direction: column;
+            }
+            .mx-auto {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .mt-2 {
+                margin-top: 2px;
+            }
+            .mt-4 {
+                margin-top: 4px;
+            }
+            .mt-8 {
+                margin-top: 8px;
+            }
+            .mt-12 {
+                margin-top: 12px;
+            }
+            .mt-16 {
+                margin-top: 16px;
+            }
+            .mt-24 {
+                margin-top: 24px;
+            }
+            .mt-32 {
+                margin-top: 32px;
+            }
+            .mt-48 {
+                margin-top: 48px;
+            }
+            .mt-120 {
+                margin-top: 120px;
+            }
+            .mb-48 {
+                margin-bottom: 48px;
+            }
+            .m-auto {
+                margin: auto;
+            }
+            .ml-6 {
+                margin-left: 6px;
+            }
+            .py-10 {
+                padding: 10px;
+            }
+            .ln-h-22 {
+                line-height: 22px;
+            }
+            .ln-h-32 {
+                line-height: 32px;
+            }
+            .text-fs-14 {
+                font-size: 14px;
+            }
+            .text-fs-16 {
+                font-size: 16px;
+            }
+            .text-fs-18 {
+                font-size: 18px;
+            }
+            .text-fs-20 {
+                font-size: 20px;
+            }
+            .text-fs-22 {
+                font-size: 22px;
+            }
+            .font-inter {
+                font-family: Inter, sans-serif;
+            }
+            .font-weight-500 {
+                font-weight: 500;
+            }
+            .font-weight-600 {
+                font-weight: 600;
+            }
+            .color-white {
+                color: #fff;
+            }
+            .color-gray {
+                color: hsla(0, 0%, 100%, 0.9);
+            }
+            .color-dark {
+                color: #222;
+            }
+            .color-danger {
+                color: #ff4963;
+            }
+            .page-bg {
+                position: fixed;
+                inset: 0;
+                z-index: -1;
+                height: 100vh;
+                width: 100vw;
+            }
+            .w-full {
+                width: 100%;
+            }
+            .w-250 {
+                width: 250px;
+            }
+            .h-150,
+            .h-165 {
+                height: 150px;
+            }
+            .background-overlay {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+            .page-overlay {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.1);
+                -webkit-backdrop-filter: blur(20px);
+                backdrop-filter: blur(20px);
+                z-index: 100;
+            }
+            .page-overlay-btn {
+                text-decoration: none;
+                font-family: Inter, sans-serif;
+                background: transparent;
+                padding: 10px 30px;
+                border-radius: 6px;
+                font-size: 1.2em;
+                display: inline-block;
+                cursor: pointer;
+            }
+            .page-overlay-title {
+                font-size: 30px;
+                font-family: sans-serif;
+            }
+            .page-overlay-text {
+                font-size: 18px;
+            }
+            .page-image {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100vw;
+                height: 100vh;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+            .display-image {
+                width: 96px;
+                height: 96px;
+                display: block;
+                border-radius: 50%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+            .text-center {
+                text-align: center;
+            }
+            .page-title {
+                margin-bottom: 0;
+            }
+            .page-bioline {
+                font-weight: 500;
+            }
+            .page-full-wrap {
+                width: 680px;
+                z-index: 10;
+                padding-bottom: 176px;
+            }
+            .page-item-wrap {
+                transition: transform 0.15s cubic-bezier(0.17, 0.67, 0.29, 2.71) 0s;
+            }
+            .page-item-wrap.show-embed {
+                border-radius: 30px;
+                transition: unset;
+                transform: unset;
+            }
+            .page-item-wrap.show-embed:hover {
+                transform: unset;
+            }
+            .page-item-wrap.show-embed:hover .page-item:after,
+            .page-item-wrap.show-embed:hover .page-item:before {
+                -webkit-animation: unset;
+                animation: unset;
+            }
+            .show-embed-item {
+                overflow: hidden;
+                transition: all 0.3s ease-in-out;
+            }
+            .page-item-wrap.show-embed .show-embed-item {
+                overflow: visible;
+            }
+            .embed-ind-arrow-icon {
+                transform: rotate(-90deg);
+            }
+            .page-item-wrap.show-embed .embed-ind-arrow-icon {
+                transform: rotate(0deg);
+            }
+            .page-item {
+                box-sizing: border-box;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+            .page-social {
+                display: block;
+                cursor: pointer;
+                margin: 0 12px 12px;
+            }
+            .page-social svg {
+                width: 28px;
+                height: 28px;
+            }
+            .relative {
+                position: relative;
+            }
+            .link-each-image {
+                width: 43px;
+                height: 43px;
+                position: absolute;
+                left: 9px;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+            .page-logo {
+                position: absolute;
+                bottom: 32px;
+                left: calc(50% - 15px);
+            }
+            .page-logo:hover svg .bl-logo-br {
+                opacity: 1;
+            }
+           
+            .cursor-pointer {
+                cursor: pointer;
+            }
+            .page-item-each {
+                text-decoration: none;
+                overflow: hidden;
+                z-index: 10;
+                box-sizing: border-box;
+            }
+            .item-title {
+                width: 55%;
+                word-break: break-word;
+            }
+            .social-icon-anchor {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+            }
+            .page-social:hover {
+                transition: all 0.1s ease-in-out;
+                transform: scale(1.1);
+            }
+            .page-item-title {
+                font-weight: 700;
+                margin-bottom: 16px;
+            }
+            
+            @media (max-width: 768px) {
+                .page-full-wrap {
+                    width: 90%;
+                }
+                .embed-wrap-inside iframe {
+                    width: 100%;
+                    min-width: unset;
+                }
+                .page-overlay-title {
+                    font-size: 24px;
+                    margin: 16px 0;
+                }
+                .embed-wrap-inside:after {
+                    width: 93%;
+                }
+            }
+            
+            
+
+            @media (max-width: 480px) {
+            .footer_div_item {
+            font-size: 0.8em;
+            }
+           
+
+            .page-item-each {
+             padding: 8px;
+            font-size: 14px;
+            }
+
+            .link-each-image {
+            width: 40px;
+            height: 40px;
+            }
+
+            .item-title {
+            width: auto;
+            font-size: 14px;
+            }
+
+            .page-item {
+            min-height: 50px;
+            }
+    }
+        </style>
+
+        <style>
+            .page-image {
+                object-position: center;
+            }
+
+            .display-image {
+                border-radius: 50%;
+                background-color: #0e0e0e;
+                box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+                border: 1px solid hsl(0, 0%, 22%);
+                width: 130px;
+                height: 150px;
+            }
+
+            .page-title {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            .page-bioline {
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .page-item-title {
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            .page-item-each {
+                color: #ffffff;
+                font-family: "Inter", sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: none;
+                border-radius: 8px;
+
+                min-height: 60px;
+            }
+
+            .page-item-wrap {
+                margin: 14px 0;
+                
+            }
+
+            .page-item-wrap:last-child {
+                margin-bottom: 0;
+            }
+
+            .page-item-wrap:hover {
+                transform: translate3d(0px, 0px, 0px) scale(1.015);
+            }
+
+            
+
+            .page-item {
+                border: 1px solid hsl(0, 0%, 22%);
+                background: #0e0e0e;
+                border-radius: 8px;
+                box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1), inset 0px 0px 2px 1px rgba(24, 39, 75, 0.05);
+            }
+
+            .embed-wrap iframe,
+            .embed-wrap-inside {
+                border-radius: 8px;
+            }
+
+            .link-each-image,
+            .page-item-wrap {
+                border-radius: 8px;
+            }
+
+            .item-title {
+            color:#ffffff;
+            }
+
+            .page-text-font {
+                font-family: "Inter", sans-serif;
+                text-transform: none;
+            }
+
+            .page-text-color {
+                color: #ededed;
+            }
+
+            .social-icon-fill path,
+            .social-icon-fill circle,
+            .social-icon-fill rect {
+                fill: #fdfdfd;
+            }
+
+            .page-overlay-btn {
+                border: 2px solid #1f365c;
+            }
+
+            .footer_div_item {
+                color: #70706f;
+                background: #0e0e0e;
+                padding: 1em;
+                margin-top:0px;
+            }
+
+            .footer_a_item {
+                color: #70706f;
+                text-decoration: none;
+            }
+
+            .flex_row_center {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            }
+
+
+            
+        </style>
+        <style></style>
+    </head>
+
+    <body>
+        <div class="min-h-full flex-h-center" id="background_div">
+            <input type="hidden" value="https://bio.link" id="app-url" />
+            <input type="hidden" value="null" id="is-featured" />
+
+            
+            <canvas id="bg-canvas" class="background-overlay"></canvas>
+
+            <div class="mt-48 page-full-wrap relative">
+                <input type="hidden" value="creator-page" id="page-type" />
+                <img
+                    class="display-image m-auto"
+                    src="My pic 3.png" alt="Logo" />
+                
+                <h2 class="page-title page-text-color page-text-font mt-16 text-center">
+                   Marco Coralde 
+                </h2>
+
+                <div class="flex-both-center flex-wrap mt-24">
+                    
+                  
+                    
+                    <div class="page-social relative">
+                        <a class="social-icon-anchor" data-id="instagram" data-type="social_link" target="_blank" href="https://www.instagram.com/jmarco.coralde/"></a>
+                        <svg class="social-icon-fill" width="30" height="30" viewBox="0 0 30 30"  xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M0.25 9C0.25 4.16751 4.16751 0.25 9 0.25H21C25.8325 0.25 29.75 4.16751 29.75 9V21C29.75 25.8325 25.8325 29.75 21 29.75H9C4.16751 29.75 0.25 25.8325 0.25 21V9ZM9 1.75C4.99594 1.75 1.75 4.99594 1.75 9V21C1.75 25.0041 4.99594 28.25 9 28.25H21C25.0041 28.25 28.25 25.0041 28.25 21V9C28.25 4.99594 25.0041 1.75 21 1.75H9ZM24 7.75H22V6.25H24V7.75ZM8.25 15C8.25 11.2721 11.2721 8.25 15 8.25C18.7279 8.25 21.75 11.2721 21.75 15C21.75 18.7279 18.7279 21.75 15 21.75C11.2721 21.75 8.25 18.7279 8.25 15ZM15 9.75C12.1005 9.75 9.75 12.1005 9.75 15C9.75 17.8995 12.1005 20.25 15 20.25C17.8995 20.25 20.25 17.8995 20.25 15C20.25 12.1005 17.8995 9.75 15 9.75Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </div>
+                    <div class="page-social relative">
+                        <a class="social-icon-anchor" data-id="facebook" data-type="social_link" target="_blank" href="https://www.facebook.com/profile.php?id=61556019215635"></a>
+                        <svg class="social-icon-fill" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30" height="30"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M0.25 15C0.25 6.8538 6.8538 0.25 15 0.25C23.1462 0.25 29.75 6.8538 29.75 15C29.75 23.1462 23.1462 29.75 15 29.75C6.8538 29.75 0.25 23.1462 0.25 15ZM15 1.75C7.68223 1.75 1.75 7.68223 1.75 15C1.75 22.0661 7.28116 27.8403 14.25 28.2291V17.75H10V16.25H14.25V13C14.25 10.3766 16.3766 8.25 19 8.25H20V9.75H19C17.2051 9.75 15.75 11.2051 15.75 13V16.25H20V17.75H15.75V28.2291C22.7188 27.8403 28.25 22.0661 28.25 15C28.25 7.68223 22.3178 1.75 15 1.75Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </div>
+                    <div class="page-social relative">
+                        <a class="social-icon-anchor" data-id="twitter" data-type="social_link" target="_blank" href="https://www.tiktok.com/@jmarcoo.coralde"></a>
+                        <svg class="social-icon-fill" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  width="30" height="30"><path d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"></svg>
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M29.2021 2.29128C29.4871 2.3899 29.6853 2.64956 29.7052 2.95041C29.8142 4.59396 29.734 5.81882 29.3639 6.86221C29.0225 7.8245 28.4577 8.56742 27.7099 9.31547V10.375C27.7099 19.9699 19.9435 27.75 10.3606 27.75L10.2857 27.75C7.10613 27.7502 3.76846 27.7503 0.583588 25.6238C0.308808 25.4403 0.186459 25.0986 0.282317 24.7824C0.378175 24.4662 0.669657 24.25 1.00006 24.25C4.6982 24.25 7.82719 22.5613 9.52731 21.2664C5.55292 19.6867 2.78453 17.2448 1.43666 14.1767C-0.0476899 10.7979 0.256627 6.81007 2.32594 2.66503C2.45925 2.39801 2.7382 2.23543 3.03624 2.25106C3.33429 2.26669 3.5947 2.45754 3.69935 2.73704C4.59654 5.13323 7.9449 9.87584 14.2285 10.2291L14.2285 9.08222C14.2285 5.31 17.282 2.25003 21.0513 2.25003C22.8547 2.25003 24.4912 2.96875 25.6893 4.13362C26.6713 3.90172 27.6414 3.3409 28.3993 2.49842C28.6009 2.27427 28.9172 2.19266 29.2021 2.29128ZM26.6834 8.22046C27.3244 7.57355 27.715 7.02367 27.9502 6.36072C28.1163 5.89237 28.2154 5.33778 28.2424 4.61274C27.4133 5.17664 26.485 5.5459 25.5445 5.68833L25.1461 5.74867L24.8759 5.4498C23.9308 4.4046 22.5677 3.75003 21.0513 3.75003C18.1126 3.75003 15.7285 6.13624 15.7285 9.08222L15.7285 11.75H14.9785C8.56761 11.75 4.7119 7.74457 3.01957 4.78232C1.71748 8.06916 1.7083 11.0657 2.80998 13.5734C4.07399 16.4506 6.86624 18.8344 11.2221 20.2886C11.4685 20.3709 11.6548 20.5748 11.7145 20.8276C11.7743 21.0804 11.6989 21.3461 11.5154 21.5299C10.3491 22.698 7.43534 24.7769 3.65251 25.4965C5.76005 26.2408 7.96828 26.25 10.3606 26.25C19.1128 26.25 26.2099 19.1436 26.2099 10.375V8.91784C26.2099 8.60128 26.406 8.33053 26.6834 8.22046Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </div>
+                    
+                </div>
+
+                <div class="mt-24">
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://marcocoralde.github.io/logo.com/" data-id="261652" data-type="page_item">
+                            <img
+                                class="link-each-image"
+                                width="100" height="100" src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/external-website-job-amp-resume-xnimrodx-lineal-color-xnimrodx-2.png" alt="external-website-job-amp-resume-xnimrodx-lineal-color-xnimrodx-2"/>
+                        
+                            <span class="item-title text-center">My Website Portfolio</span>
+                        </a>
+                    </div>
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://www.facebook.com/groups/304343442267184" data-id="261686" data-type="page_item">
+                            <img
+                                class="link-each-image"
+                                width="100" height="100" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-online-community-digital-marketing-flaticons-flat-flat-icons.png" alt="external-online-community-digital-marketing-flaticons-flat-flat-icons"/>
+                            <span class="item-title text-center">Free Facebook Group</span>
+                        </a>
+                    </div>
+                    <div class="page-item-wrap relative">
+                        <div class="page-item flex-both-center absolute"></div>
+                        <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://drive.google.com/drive/folders/1I_Y9Qqm3HEI-RQ_IMqvCy5tORxN32fvI?usp=sharing" data-id="261687" data-type="page_item">
+                            <img
+                                class="link-each-image"
+                                width="90" height="96" src="https://img.icons8.com/external-justicon-flat-justicon/64/external-adobe-social-media-justicon-flat-justicon.png" alt="external-adobe-social-media-justicon-flat-justicon"/>
+                           
+                            <span class="item-title text-center">Free Software</span>
+                        </a>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        
+        <footer>
+            <!-- Footer Codes Start -->
        
-        <a class="main_a_item" href="https://marcocoralde.github.io/logo.com/" target="_blank" rel="nofollow">
-          <button class="main_button_item">
-            <img width="43" height="43" src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/external-website-job-amp-resume-xnimrodx-lineal-color-xnimrodx-2.png" alt="external-website-job-amp-resume-xnimrodx-lineal-color-xnimrodx-2"/><span>My Website Portfolio</span>
-          </button>
-        </a>
+            <div class="footer_div_item flex_row_center">
+              <a class="footer_a_item" href="#link">© 2023 Marco Coralde | All rights reserved</a>
+            </div>
+        
+        </footer>
+    </body>
 
-        <a class="main_a_item" href="https://www.facebook.com/groups/304343442267184" target="_blank" rel="nofollow">
-          <button class="main_button_item">
-            <img width="43" height="43" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-online-community-digital-marketing-flaticons-flat-flat-icons.png" alt="external-online-community-digital-marketing-flaticons-flat-flat-icons"/>
-            <span>Free Facebook Group</span>
-          </button>
-        </a>
 
-        <a class="main_a_item" href="https://drive.google.com/drive/folders/1I_Y9Qqm3HEI-RQ_IMqvCy5tORxN32fvI?usp=sharing" target="_blank" rel="nofollow">
-          <button class="main_button_item">
-            <img width="36" height="36" src="https://img.icons8.com/external-justicon-flat-justicon/64/external-adobe-social-media-justicon-flat-justicon.png" alt="external-adobe-social-media-justicon-flat-justicon"/>
-            <span>Free Software</span>
-          </button>
-        </a>
-
-      </section>
-      <!-- Menu Container 1 Codes End -->
-      <div class="social_media_text flex_row_center">
-          <span>Follow me on:</span>
-      </div>
-      <!-- Social Media Icons Codes Start -->
-     
-        <div class="header_svg_list flex_row_center">
-          <!-- Icon 1 Codes -->
-          <div class="header_svg_item">
-            <a href="https://www.facebook.com/coralde.coralde.589/" target="_blank" rel="nofollow">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30" height="30"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
-            </a>
-          </div>
-          <!-- Icon 2 Codes -->
-          <div class="header_svg_item">
-            <a href="https://www.tiktok.com/@jmarcoo.coralde" target="_blank" rel="nofollow">
-              <svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  width="30" height="30"><path d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"></path></svg>
-            </a>
-          </div>
-          <!-- Icon 3 Codes -->
-          <div class="header_svg_item">
-            <a href="https://www.instagram.com/jmarco.coralde/" target="_blank" rel="nofollow">
-              <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24"  width="30" height="30">
-                <path d="M21.938,7.71a7.329,7.329,0,0,0-.456-2.394,4.615,4.615,0,0,0-1.1-1.694,4.61,4.61,0,0,0-1.7-1.1,7.318,7.318,0,0,0-2.393-.456C15.185,2.012,14.817,2,12,2s-3.185.012-4.29.062a7.329,7.329,0,0,0-2.394.456,4.615,4.615,0,0,0-1.694,1.1,4.61,4.61,0,0,0-1.1,1.7A7.318,7.318,0,0,0,2.062,7.71C2.012,8.814,2,9.182,2,12s.012,3.186.062,4.29a7.329,7.329,0,0,0,.456,2.394,4.615,4.615,0,0,0,1.1,1.694,4.61,4.61,0,0,0,1.7,1.1,7.318,7.318,0,0,0,2.393.456c1.1.05,1.472.062,4.29.062s3.186-.012,4.29-.062a7.329,7.329,0,0,0,2.394-.456,4.9,4.9,0,0,0,2.8-2.8,7.318,7.318,0,0,0,.456-2.393c.05-1.1.062-1.472.062-4.29S21.988,8.814,21.938,7.71Zm-1,8.534a6.351,6.351,0,0,1-.388,2.077,3.9,3.9,0,0,1-2.228,2.229,6.363,6.363,0,0,1-2.078.388C15.159,20.988,14.8,21,12,21s-3.159-.012-4.244-.062a6.351,6.351,0,0,1-2.077-.388,3.627,3.627,0,0,1-1.35-.879,3.631,3.631,0,0,1-.879-1.349,6.363,6.363,0,0,1-.388-2.078C3.012,15.159,3,14.8,3,12s.012-3.159.062-4.244A6.351,6.351,0,0,1,3.45,5.679a3.627,3.627,0,0,1,.879-1.35A3.631,3.631,0,0,1,5.678,3.45a6.363,6.363,0,0,1,2.078-.388C8.842,3.012,9.205,3,12,3s3.158.012,4.244.062a6.351,6.351,0,0,1,2.077.388,3.627,3.627,0,0,1,1.35.879,3.631,3.631,0,0,1,.879,1.349,6.363,6.363,0,0,1,.388,2.078C20.988,8.841,21,9.2,21,12S20.988,15.159,20.938,16.244Z"></path>
-                <path d="M17.581,5.467a.953.953,0,1,0,.952.952A.954.954,0,0,0,17.581,5.467Z"></path>
-                <path d="M12,7.073A4.927,4.927,0,1,0,16.927,12,4.932,4.932,0,0,0,12,7.073Zm0,8.854A3.927,3.927,0,1,1,15.927,12,3.932,3.932,0,0,1,12,15.927Z"></path>
-              </svg>
-            </a>
-          </div>
-         
-      
-       
-    <!-- Social Media Icons Codes End -->
-
-      
-
-     
-    </main>
-    <footer>
-      <!-- Footer Codes Start -->
-      <div class="footer_div_item flex_row_center">
-        <a class="footer_a_item" href="#link">Created by Marco Coralde</a>&nbsp;| © 2024 
-      </div>
-    </footer>
-      <!-- Footer Codes End -->
-    <script src="js/main.js"></script>
-  </body>
 </html>
+
